@@ -1,0 +1,72 @@
+/* Estilo general */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* Degradado azul/morado */
+    color: white;
+}
+
+/* Selector de dificultad */
+#difficultySelector {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 18px;
+}
+
+select {
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Marcador */
+#scoreDisplay {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#player1Score { color: #4facfe; } /* Azul para el jugador */
+#player2Score { color: #ff2e63; } /* Rojo para la IA */
+
+/* Zona de juego */
+canvas {
+    background-color: #222;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Botón de reset */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px rgba(255, 75, 43, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
